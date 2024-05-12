@@ -50,6 +50,18 @@ header nav ul li {
     margin: 0 10px;
 }
 
+main h1{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.cover_image img {
+    width: 100%;
+    
+
+}
+
 /* CARDS */
 .cards{
     display: flex;
@@ -85,4 +97,10 @@ footer{
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none; /* Oculta el nav en pantallas con un ancho máximo de 768px (típicamente, dispositivos móviles) */
+    }
 }
