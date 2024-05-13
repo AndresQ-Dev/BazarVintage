@@ -10,21 +10,22 @@
     scroll-behavior: smooth;
 }
 
-.MainContainer{
-    max-width: 1400px;
+.MainContainer {
+    /* max-width: 1400px; */
     margin: auto;
 }
 
 /* HEADER */
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: beige;
-
+    /* background-color: beige; */
+    max-width: 1600px;
+    margin: auto;
 }
 
-header .logo{
+header .logo {
     padding: 25px 30px;
     font-weight: 700;
     font-size: 2.5rem;
@@ -32,15 +33,15 @@ header .logo{
     font-style: italic;
 }
 
-header nav{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-font-weight: bold;
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,27 +51,34 @@ header nav ul li {
     margin: 0 10px;
 }
 
-main h1{
+main h1 {
     font-size: 2rem;
     text-align: center;
+}
 
+/*Opción 1*/
+.cover_image{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 15px;
 }
 
 .cover_image img {
     width: 100%;
-    
-
+    object-fit: cover;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
 }
 
+
 /* CARDS */
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 50%;
 }
 
-.card{
+.card {
     width: 300px;
     margin: 15px;
     border-radius: 10px;
@@ -80,18 +88,18 @@ main h1{
     transition: transform 0.3s ease;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-20px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
-.card .img{
+.card .img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,6 +109,10 @@ footer{
 
 @media screen and (max-width: 768px) {
     header nav {
-        display: none; /* Oculta el nav en pantallas con un ancho máximo de 768px (típicamente, dispositivos móviles) */
+        display: none;
+    }
+
+    .cover_image {
+        /* display: none; */
     }
 }
