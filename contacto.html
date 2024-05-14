@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BazarVintaje</title>
+</head>
+
+<body>
+    <div class="MainConteiner">
+
+        <header>
+            <img src="" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <input type="text" placeholder="buscar...">
+                    <button>77</button>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            
+           <h2>Formulario de contacto</h2>
+
+           <form action="" method="POST" target="_blank">
+
+            <label for="consulta">Motivo de consulta: </label><br>
+            <select name="motivo">
+                <option>Opinión
+                </option>
+                <option>Solicitar información
+                </option>
+                <option>Problemas de envío</option>
+                <option>Notificar errores</option>
+            </select>
+
+            <br><label for="email">E-mail: </label><br>
+            <input type="email" name="email" id="email" required>
+            
+            <br><label for="nombre">Nombre: </label><br>
+            <input maxlength="20" type="text" name="nombre" id="nombre" required>
+
+            <br><label for="nombre">Género: </label><br>
+            <input type="radio" name="opciones" value="F">F
+            <input type="radio" name="opciones" value="M">M
+            <input type="radio" name="opciones" value="X" checked>X
+
+            <br><label for="nombre">Contenido del mensaje: </label><br>
+            <textarea name="contenido" placeholder="Escriba aquí..." rows="10" cols="40" required></textarea><br>
+
+            Opcional: ¡Por favor califica nuestra web! La barrita al máximo significa que te encanta y vacía que no te gusta.<br><input type="range" min="0" max="5">
+            
+            <br><input type="image" alt="Submit" src="https://w7.pngwing.com/pngs/851/106/png-transparent-computer-icons-email-telephone-website-miscellaneous-blue-angle.png" height="50px" width="50px"> Enviar
+           </form>
+
+        </main>
+
+        <footer>
+            Copyright 2024
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
