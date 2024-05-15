@@ -20,18 +20,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: beige; */
     max-width: 1600px;
     margin: auto;
 }
 
 header .logo {
-    padding: 25px 30px;
-    font-weight: 700;
-    font-size: 2.5rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
 }
+
+header .logo img{
+    width: 90px;
+    margin-right: 10px;
+}
+
+header .logo p{
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
 
 header nav {
     display: flex;
@@ -124,6 +133,10 @@ footer {
         display: none;
     }
 
+    header .logo{
+        margin: auto;
+    }
+    
     .cover_image {
         /* display: none; */
     }
@@ -136,7 +149,7 @@ footer {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #a46a40;
     border-radius: 15px;
     border: 2.5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -153,7 +166,7 @@ label {
     font-size: 16px;
     margin-bottom: 5px;
     display: block;
-    color: #444;
+    color: #333;
 }
 
 input, select, textarea {
