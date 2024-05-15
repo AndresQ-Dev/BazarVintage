@@ -120,7 +120,7 @@ footer {
 
 /* Estilos iniciales para el formulario */
 
-main {
+.main__contact {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
