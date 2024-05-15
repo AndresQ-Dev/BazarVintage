@@ -60,6 +60,7 @@ header nav ul li a{
 
 header nav ul li a:hover {
     color:#a46a40;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
 main h1 {
