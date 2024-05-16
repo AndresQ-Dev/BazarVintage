@@ -1,5 +1,7 @@
+/* Importa fuente Roboto desde Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*Reset css*/
 * {
     margin: 0;
     padding: 0;
@@ -11,16 +13,15 @@
 }
 
 .MainContainer {
-    /* max-width: 1400px; */
     margin: auto;
 }
 
-/* HEADER */
+/* Estilos para HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;
+    max-width: 1600px; /*Para no usar todo el ancho en pantalla UltraWide*/
     margin: auto;
 }
 
@@ -72,8 +73,46 @@ header nav ul li a{
 
 header nav ul li a:hover {
     color: #9d7d68;
-    /* color:#a46a40; */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+/* Estilos para el "mobile_nav" */
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    margin-right: 1.5em;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.8);
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.mobile-nav ul {
+    flex-direction: column;
+}
+
+.mobile-nav ul li {
+    margin: 3px 10px;
 }
 
 main h1 {
@@ -81,7 +120,7 @@ main h1 {
     text-align: center;
 }
 
-/*Opción 1*/
+/*Estilos para banner*/
 .cover_image {
     width: 100%;
     margin: auto;
@@ -132,6 +171,7 @@ footer {
     margin-top: 100px;
 }
 
+/* Media-Query para mobile */
 @media screen and (max-width: 768px) {
     header nav {
         display: none;
@@ -141,13 +181,16 @@ footer {
         margin: auto;
     }
     
-    .cover_image {
-        /* display: none; */
+    .menu-icon {
+        display: block;
     }
 
+    .menu-toggle:checked ~ .menu-icon ~ .mobile-nav {
+        display: flex;
+    }
 }
 
-/* Estilos iniciales para el formulario en "Contacto"*/
+/* Estilos para el formulario en "Contacto"*/
 
 .main__contact {
     max-width: 700px;
