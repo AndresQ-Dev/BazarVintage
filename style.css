@@ -38,8 +38,11 @@ header .logo img{
 header .logo p{
     font-size: 2em;
     font-weight: 700;
-    font-style: italic;
+    font-style: oblique;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(35deg, #333,#9d7d68,#333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 } 
 
 header nav {
@@ -68,7 +71,8 @@ header nav ul li a{
 }
 
 header nav ul li a:hover {
-    color:#a46a40;
+    color: #9d7d68;
+    /* color:#a46a40; */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
