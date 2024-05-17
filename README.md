@@ -14,8 +14,6 @@ Bienvenido al repositorio del proyecto **Bazar Vintage**. En este sitio web que 
 
 _Insertar aquí algunas capturas...
 
-## Uso:
-
 ## Contribuciones:
 
 Si deseas proponer cambios nos encantaría recibir tus contribuciones para mejorar y hacer crecer este proyecto. Si tienes alguna idea, sugerencia o corrección, no dudes en enviar un pull request.
