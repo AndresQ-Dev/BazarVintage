@@ -91,7 +91,7 @@ header nav ul li a:hover {
     cursor: pointer;
     color: #333;
     padding: 10px;
-    margin-right: 1.5em;
+    margin-right: 1.1em;
 }
 
 .mobile-nav {
@@ -197,17 +197,25 @@ footer {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #a46a40;
+    background: linear-gradient(3deg,#e9e9ed, #9d7d68);
     border-radius: 15px;
     border: 2.5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.titulo{
+    text-align: center;
+}
 h2 {
+    display: inline-block;
     font-size: 28px;
     margin-bottom: 20px;
+    padding: 10px 25px;
     color: #333;
     text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: transparent;
 }
 
 label {
