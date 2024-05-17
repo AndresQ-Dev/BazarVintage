@@ -44,6 +44,7 @@ header .logo p{
     background: linear-gradient(35deg, #333,#9d7d68,#333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 } 
 
 header nav {
