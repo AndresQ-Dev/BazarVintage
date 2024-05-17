@@ -164,14 +164,6 @@ main h1 {
     object-fit: cover;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}
-
 /* Media-Query para mobile */
 @media screen and (max-width: 768px) {
     header nav {
@@ -287,4 +279,22 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.logoGit a {
+    font-size: 3em;
+    color: #9d7d68;
+
+}
+
+.logoGit a:hover{
+    color: #333;
 }
