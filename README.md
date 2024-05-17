@@ -12,7 +12,9 @@ Bienvenido al repositorio del proyecto **Bazar Vintage**. En este sitio web que 
 
 ## Capturas de pantalla:
 
-_Insertar aquí algunas capturas...
+<div align="center">
+  <img src="./images/forReadme.png" alt="Texto Alternativo" style="max-width:100%;">
+</div>
 
 ## Contribuciones:
 
