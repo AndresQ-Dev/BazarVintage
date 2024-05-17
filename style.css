@@ -91,7 +91,7 @@ header nav ul li a:hover {
     cursor: pointer;
     color: #333;
     padding: 10px;
-    margin-right: 1.5em;
+    margin-right: 1.1em;
 }
 
 .mobile-nav {
@@ -164,14 +164,6 @@ main h1 {
     object-fit: cover;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}
-
 /* Media-Query para mobile */
 @media screen and (max-width: 768px) {
     header nav {
@@ -197,17 +189,25 @@ footer {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #a46a40;
+    background: linear-gradient(3deg,#e9e9ed, #9d7d68);
     border-radius: 15px;
     border: 2.5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.titulo{
+    text-align: center;
+}
 h2 {
+    display: inline-block;
     font-size: 28px;
     margin-bottom: 20px;
+    padding: 10px 25px;
     color: #333;
     text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: transparent;
 }
 
 label {
@@ -279,4 +279,22 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.logoGit a {
+    font-size: 3em;
+    color: #9d7d68;
+
+}
+
+.logoGit a:hover{
+    color: #333;
 }

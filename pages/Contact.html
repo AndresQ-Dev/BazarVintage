@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/870ccd885d.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 
@@ -35,63 +36,69 @@
     </header>
 
     <div class="container">
-    <main class="main__contact">
-        <h2>Contáctanos</h2>
-
-        <form action="" method="POST" target="_blank">
-            <label for="motivo">Motivo de consulta:</label><br>
-            <select name="motivo" id="motivo" required>
-                <option value="" disabled selected>Selecciona un motivo</option>
-                <option value="Opinión">Opinión</option>
-                <option value="Solicitar información">Solicitar información</option>
-                <option value="Problemas de envío">Problemas de envío</option>
-                <option value="Notificar errores">Notificar errores</option>
-            </select>
-
-            <label for="email">E-mail:</label><br>
-            <input type="email" name="email" id="email" placeholder="Tu correo electrónico" required><br>
-
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Tu nombre" required><br>
-
-            <label>Género:</label><br>
-            <div class="radio-group">
-                <div class="radio">
-                    <input type="radio" name="genero" value="F" id="genero-f">
-                    <label for="genero-f">F</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" name="genero" value="M" id="genero-m">
-                    <label for="genero-m">M</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" name="genero" value="X" id="genero-x">
-                    <label for="genero-x">X</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" name="genero" value="" id="genero-none" checked>
-                    <label for="genero-none">Otro</label>
-                </div>
+        <main class="main__contact">
+            <div class="titulo">
+                <h2>Contáctanos</h2>
             </div>
 
+            <form action="" method="POST" target="_blank">
+                <label for="motivo">Motivo de consulta:</label><br>
+                <select name="motivo" id="motivo" required>
+                    <option value="" disabled selected>Selecciona un motivo</option>
+                    <option value="Opinión">Opinión</option>
+                    <option value="Solicitar información">Solicitar información</option>
+                    <option value="Problemas de envío">Problemas de envío</option>
+                    <option value="Notificar errores">Notificar errores</option>
+                </select>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje" rows="6"
-                required></textarea><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" placeholder="Tu correo electrónico" required><br>
 
-            <label for="calificacion">Calificación:</label><br>
-            <input type="range" name="calificacion" id="calificacion" min="0" max="5"><br>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Tu nombre" required><br>
 
-            <button type="submit">
-                <span>Enviar</span>
-            </button>
-            
-        </form>
-    </main>
-</div>
+                <label>Género:</label><br>
+                <div class="radio-group">
+                    <div class="radio">
+                        <input type="radio" name="genero" value="F" id="genero-f">
+                        <label for="genero-f">F</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="genero" value="M" id="genero-m">
+                        <label for="genero-m">M</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="genero" value="X" id="genero-x">
+                        <label for="genero-x">X</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="genero" value="" id="genero-none" checked>
+                        <label for="genero-none">Otro</label>
+                    </div>
+                </div>
+
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje" rows="6"
+                    required></textarea><br>
+
+                <label for="calificacion">Calificación:</label><br>
+                <input type="range" name="calificacion" id="calificacion" min="0" max="5"><br>
+
+                <button type="submit">
+                    <span>Enviar</span>
+                </button>
+
+            </form>
+        </main>
+    </div>
 
     <footer>
-        &copy; Copyright 2024
+        <div class="logoGit">
+            <a href="https://github.com/AndresQ-Dev/BazarVintage.git"><i class="fa-brands fa-github"></i></a>
+        </div>
+        
+        &copy; Bazar Vintage 2024
     </footer>
 </body>
 
