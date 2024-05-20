@@ -14,6 +14,7 @@
 
 .MainContainer {
     margin: auto;
+    background-color: #fcfcfc;
 }
 
 /* Estilos para HEADER */
@@ -74,7 +75,9 @@ header nav ul li a{
 
 header nav ul li a:hover {
     color: #9d7d68;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc; 
 }
 
 /* Estilos para el "mobile_nav" */
@@ -141,6 +144,7 @@ main h1 {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 50%;
+    background-color: #fcfcfc;
 }
 
 .card {
