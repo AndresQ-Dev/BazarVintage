@@ -291,6 +291,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    box-shadow: 0px -5px 5px rgba(204, 204, 204, 0.5);
 }
 
 .logoGit{
