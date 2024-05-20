@@ -199,10 +199,10 @@ main h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.titulo{
+.titulo_contacto{
     text-align: center;
 }
-h2 {
+.titulo_contacto h2 {
     display: inline-block;
     font-size: 28px;
     margin-bottom: 20px;
