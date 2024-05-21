@@ -17,7 +17,7 @@ function validar()
     //Debe haberse subido un archivo
     let archivo_input = document.getElementById('miArchivo');
     let archivo_subido = miArchivo.files;
-
+/*
     if (archivo_subido.length === 0) {
         alert("Por favor, sube un archivo.");
         event.preventDefault();
@@ -34,6 +34,6 @@ function validar()
             event.preventDefault();
          }
     } 
-    
+    */
     
 }
