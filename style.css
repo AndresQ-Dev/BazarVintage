@@ -343,8 +343,21 @@ footer .info p{
     align-items: center;
     align-content: center;
     justify-content: center;
-    color: #333;
+    color: #9d7d68;
     padding: 20px;
+    position: relative;
+}
+
+.sub::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 3px;
+    background-color: #9d7d68;
+    box-shadow: 0 2px 5px rgba(37, 37, 37, 0.4);
 }
 
 .filters{
