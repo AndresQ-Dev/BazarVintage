@@ -68,7 +68,7 @@ header nav ul li {
 }
 
 header nav ul li a{
-    color: #333;
+    color: #555;
     font-size: 1.3em;
     transition: color 0.4s, background-color 0.4s;
 }
@@ -217,7 +217,7 @@ main h1 {
     font-size: 28px;
     margin-bottom: 20px;
     padding: 10px 25px;
-    color: #333;
+    color: #444;
     text-align: center;
     /* border: 2px solid #ccc; */
     /* border-radius: 10px; */
