@@ -41,9 +41,9 @@
                 <h2>Contáctanos</h2>
             </div>
 
-            <form action="" method="POST" target="_blank">
+            <form action="" method="POST" target="_blank" id="formulario_contacto">
                 <label for="motivo">Motivo de consulta:</label><br>
-                <select name="motivo" id="motivo" required>
+                <select name="motivo" id="motivo">
                     <option value="" disabled selected>Selecciona un motivo</option>
                     <option value="Opinión">Opinión</option>
                     <option value="Solicitar información">Solicitar información</option>
@@ -52,10 +52,10 @@
                 </select>
 
                 <label for="email">E-mail:</label><br>
-                <input type="email" name="email" id="email" placeholder="Tu correo electrónico" required><br>
+                <input type="email" name="email" id="email" placeholder="Tu correo electrónico"><br>
 
                 <label for="nombre">Nombre:</label><br>
-                <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Tu nombre" required><br>
+                <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Tu nombre"><br>
 
                 <label>Género:</label><br>
                 <div class="radio-group">
@@ -79,13 +79,13 @@
 
 
                 <label for="mensaje">Mensaje:</label><br>
-                <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje" rows="6"
-                    required></textarea><br>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje" rows="6"></textarea><br>
 
-                <label for="calificacion">Calificación:</label><br>
-                <input type="range" name="calificacion" id="calificacion" min="0" max="5"><br>
+                <label for="miArchivo">Selecciona una imagen .jpg o .png:</label>
 
-                <button type="submit">
+                <input type="file" id="miArchivo" name="miArchivo" multiple><br><br>
+
+                <button type="submit" onclick="validar()">
                     <span>Enviar</span>
                 </button>
 
@@ -97,9 +97,11 @@
         <div class="logoGit">
             <a href="https://github.com/AndresQ-Dev/BazarVintage.git"><i class="fa-brands fa-github"></i></a>
         </div>
-        
+
         &copy; Bazar Vintage 2024
     </footer>
+
+    <script src="../funcionalidad_form.js"></script>
 </body>
 
 </html>
