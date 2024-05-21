@@ -318,6 +318,8 @@ footer {
     align-content: center;
     justify-content: center;
     color: #333;
+    padding: 20px;
+    font-style: italic;
 }
 
 .filters{
@@ -334,10 +336,18 @@ footer {
     margin: 0 5px;
     border-radius: 10px;
     transition: background-color 0.5s ease, transform 0.5s ease;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .filters input[type="button"]:hover{
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
     transform: scale(0.95);
+}
+
+/* .card:not([cat="deco"]){
+    display: none;
+} */
+
+.hidden{
+    display: none;
 }
