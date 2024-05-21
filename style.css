@@ -177,13 +177,17 @@ main h1 {
     header .logo{
         margin: auto;
     }
-    
+
     .menu-icon {
         display: block;
     }
 
     .menu-toggle:checked ~ .menu-icon ~ .mobile-nav {
         display: flex;
+    }
+
+    .MainContainer footer {
+        flex-direction: column;
     }
 }
 
@@ -300,6 +304,7 @@ footer .info p{
     font-size: 14px;
     font-weight: bold;
     color: #333;
+    text-align: center;
 
 }
 
@@ -359,10 +364,10 @@ footer .info p{
     transform: scale(0.95);
 }
 
-/* .card:not([cat="deco"]){
-    display: none;
-} */
-
 .hidden{
     display: none;
 }
+
+/* .card:not([cat="todo"]){
+    display: none;
+} */
