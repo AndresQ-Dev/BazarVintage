@@ -14,6 +14,7 @@
 
 .MainContainer {
     margin: auto;
+    background-color: #fcfcfc;
 }
 
 /* Estilos para HEADER */
@@ -74,7 +75,9 @@ header nav ul li a{
 
 header nav ul li a:hover {
     color: #9d7d68;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc; 
 }
 
 /* Estilos para el "mobile_nav" */
@@ -141,6 +144,7 @@ main h1 {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 50%;
+    background-color: #fcfcfc;
 }
 
 .card {
@@ -151,6 +155,12 @@ main h1 {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     transition: transform 0.3s ease;
+}
+
+.card .price{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
 }
 
 .card:hover {
@@ -173,13 +183,17 @@ main h1 {
     header .logo{
         margin: auto;
     }
-    
+
     .menu-icon {
         display: block;
     }
 
     .menu-toggle:checked ~ .menu-icon ~ .mobile-nav {
         display: flex;
+    }
+
+    .MainContainer footer {
+        flex-direction: column;
     }
 }
 
@@ -195,18 +209,18 @@ main h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.titulo{
+.titulo_contacto{
     text-align: center;
 }
-h2 {
+.titulo_contacto h2 {
     display: inline-block;
     font-size: 28px;
     margin-bottom: 20px;
     padding: 10px 25px;
     color: #333;
     text-align: center;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    /* border: 2px solid #ccc; */
+    /* border-radius: 10px; */
     background: transparent;
 }
 
@@ -281,23 +295,34 @@ button:hover {
     background-color: #555;
 }
 
+/* Estilos para FOOTER */
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 100px;
+    box-shadow: 0px -5px 5px rgba(204, 204, 204, 0.5);
+    padding-top: 15px;
+}
+
+footer .info p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+
 }
 
 .logoGit{
     display: flex;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: translateY 0.5s ease;
     padding: 10px 10px;
 }
 
 .logoGit a {
-    font-size: 3em;
+    font-size: 3.5em;
     color: #9d7d68;
 }
 
@@ -305,3 +330,49 @@ footer {
     color: #333;
     transform: translateY(-10px);
 }
+
+.copyright{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ESTILOS DE PÁGINA PRODUCTOS */
+.titulo_Productos h2{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #333;
+    padding: 20px;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filters input[type="button"]{
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b); 
+    color: #fcfcfc;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    font-size: 1.3em;
+}
+
+.filters input[type="button"]:hover{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(0.95);
+}
+
+.hidden{
+    display: none;
+}
+
+/* .card:not([cat="todo"]){
+    display: none;
+} */
