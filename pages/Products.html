@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,99 +8,115 @@
     <script src="https://kit.fontawesome.com/870ccd885d.js" crossorigin="anonymous"></script>
     <title>Products</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../images/favicom.png" alt="logo"></a>
-            <p>Bazar Vintage</p>
+    <div class="MainContainer">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../images/favicom.png" alt="logo"></a>
+                <p>Bazar Vintage</p>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./Products.html">Productos</a></li>
+                    <li><a href="./Sales.html">Sale</a></li>
+                    <li><a href="./Contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./Products.html">Productos</a></li>
+                    <li><a href="./Sales.html">Sale</a></li>
+                    <li><a href="./Contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="titulo_Productos">
+            <h2>Nuestros Productos</h2>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./Products.html">Productos</a></li>
-                <li><a href="./Sales.html">Sale</a></li>
-                <li><a href="./Contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <nav class="mobile-nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./Products.html">Productos</a></li>
-                <li><a href="./Sales.html">Sale</a></li>
-                <li><a href="./Contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="titulo_Productos">
-        <h2>Nuestros Productos</h2>
+
+        <div class="filters">
+            <input type="button" value="Madera" id="filtro_madera">
+            <input type="button" value="Bazar" id="filtro_bazar">
+            <input type="button" value="Deco" id="filtro_deco">
+            <!-- <input type="button" value="Todo" id="filtro_todo"> -->
+
+        </div>
+
+        <div class="cards">
+            <div class="card" cat="madera">
+                <img src="../images/chair1.png" alt="">
+                <h3>Producto1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="deco">
+                <img src="../images/cat_mouse.png" alt="">
+                <h3>Producto2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="deco">
+                <img src="../images/lamp.png" alt="">
+                <h3>Producto3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="deco">
+                <img src="../images/frame_branchs.png" alt="">
+                <h3>Producto4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="madera">
+                <img src="../images/modular_table.png" alt="">
+                <h3>Producto5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="deco">
+                <img src="../images/yinyang_frame.png" alt="">
+                <h3>Producto6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="bazar">
+                <img src="../images/sugar_bowl.png" alt="">
+                <h3>Producto7</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="bazar">
+                <img src="../images/vintage_teapot.png" alt="">
+                <h3>Producto8</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+            <div class="card" cat="madera">
+                <img src="../images/retro_Ziggurat_Table.png" alt="">
+                <h3>Producto9</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="info">
+                <p>
+                    <span>Horario:</span> Lunes a Viernes 9:30hs - 15:00hs<br>
+                    <span>Dirección:</span> Evergreen Terrace 742, Springfield.<br>
+                    <span>Teléfono:</span> 764-84377<br>
+                    <span>e-mail:</span> bazarvintage@admin.com
+                </p>
+            </div>
+
+            <div class="logoGit">
+                <a href="https://github.com/AndresQ-Dev/BazarVintage.git"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="copyright">
+                &copy; Bazar Vintage 2024
+            </div>
+
+        </footer>
+        <script src="../scrip.js"></script>
     </div>
-
-    <div class="filters">
-        <input type="button" value="Madera" id="filtro_madera">
-        <input type="button" value="Bazar" id="filtro_bazar">
-        <input type="button" value="Deco" id="filtro_deco">
-        <!-- <input type="button" value="Todo" id="filtro_todo"> -->
-
-    </div>
-
-    <div class="cards">
-        <div class="card" cat="madera">
-            <img src="../images/chair1.png" alt="">
-            <h3>Producto1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="deco">
-            <img src="../images/cat_mouse.png" alt="">
-            <h3>Producto2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="deco">
-            <img src="../images/lamp.png" alt="">
-            <h3>Producto3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="deco">
-            <img src="../images/frame_branchs.png" alt="">
-            <h3>Producto4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="madera">
-            <img src="../images/modular_table.png" alt="">
-            <h3>Producto5</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="deco">
-            <img src="../images/yinyang_frame.png" alt="">
-            <h3>Producto6</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="bazar">
-            <img src="../images/sugar_bowl.png" alt="">
-            <h3>Producto7</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="bazar">
-            <img src="../images/vintage_teapot.png" alt="">
-            <h3>Producto8</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-        <div class="card" cat="madera">
-            <img src="../images/retro_Ziggurat_Table.png" alt="">
-            <h3>Producto9</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa? Nesciunt quas velit</p>
-        </div>
-    </div>
-
-    <footer>
-        <div class="logoGit">
-            <a href="https://github.com/AndresQ-Dev/BazarVintage.git"><i class="fa-brands fa-github"></i></a>
-        </div>
-        
-        &copy; Bazar Vintage 2024
-    </footer>
-<script src="../scrip.js"></script>
 </body>
+
 </html>

@@ -10,98 +10,112 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../images/favicom.png" alt="logo"></a>
-            <p>Bazar Vintage</p>
-        </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./Products.html">Productos</a></li>
-                <li><a href="./Sales.html">Sale</a></li>
-                <li><a href="./Contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <nav class="mobile-nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./Products.html">Productos</a></li>
-                <li><a href="./Sales.html">Sale</a></li>
-                <li><a href="./Contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container">
-        <main class="main__contact">
-            <div class="titulo_contacto">
-                <h2>Contáctanos</h2>
+    <div class="MainContainer">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../images/favicom.png" alt="logo"></a>
+                <p>Bazar Vintage</p>
             </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./Products.html">Productos</a></li>
+                    <li><a href="./Sales.html">Sale</a></li>
+                    <li><a href="./Contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./Products.html">Productos</a></li>
+                    <li><a href="./Sales.html">Sale</a></li>
+                    <li><a href="./Contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <form action="" method="POST" target="_blank" id="formulario_contacto">
-                <label for="motivo">Motivo de consulta:</label><br>
-                <select name="motivo" id="motivo">
-                    <option value="" disabled selected>Selecciona un motivo</option>
-                    <option value="Opinión">Opinión</option>
-                    <option value="Solicitar información">Solicitar información</option>
-                    <option value="Problemas de envío">Problemas de envío</option>
-                    <option value="Notificar errores">Notificar errores</option>
-                </select>
-
-                <label for="email">E-mail:</label><br>
-                <input type="email" name="email" id="email" placeholder="Tu correo electrónico"><br>
-
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Tu nombre"><br>
-
-                <label>Género:</label><br>
-                <div class="radio-group">
-                    <div class="radio">
-                        <input type="radio" name="genero" value="F" id="genero-f">
-                        <label for="genero-f">F</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="genero" value="M" id="genero-m">
-                        <label for="genero-m">M</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="genero" value="X" id="genero-x">
-                        <label for="genero-x">X</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="genero" value="" id="genero-none" checked>
-                        <label for="genero-none">Otro</label>
-                    </div>
+        <div class="container">
+            <main class="main__contact">
+                <div class="titulo_contacto">
+                    <h2>Contáctanos</h2>
                 </div>
 
+                <form action="" method="POST" target="_blank" id="formulario_contacto">
+                    <label for="motivo">Motivo de consulta:</label><br>
+                    <select name="motivo" id="motivo">
+                        <option value="" disabled selected>Selecciona un motivo</option>
+                        <option value="Opinión">Opinión</option>
+                        <option value="Solicitar información">Solicitar información</option>
+                        <option value="Problemas de envío">Problemas de envío</option>
+                        <option value="Notificar errores">Notificar errores</option>
+                    </select>
 
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje" rows="6"></textarea><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Tu correo electrónico"><br>
 
-                <label for="miArchivo">Selecciona una imagen .jpg o .png:</label>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Tu nombre"><br>
 
-                <input type="file" id="miArchivo" name="miArchivo" multiple><br><br>
+                    <label>Género:</label><br>
+                    <div class="radio-group">
+                        <div class="radio">
+                            <input type="radio" name="genero" value="F" id="genero-f">
+                            <label for="genero-f">F</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="genero" value="M" id="genero-m">
+                            <label for="genero-m">M</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="genero" value="X" id="genero-x">
+                            <label for="genero-x">X</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="genero" value="" id="genero-none" checked>
+                            <label for="genero-none">Otro</label>
+                        </div>
+                    </div>
 
-                <button type="submit" onclick="validar()">
-                    <span>Enviar</span>
-                </button>
 
-            </form>
-        </main>
-    </div>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje" rows="6"></textarea><br>
 
-    <footer>
-        <div class="logoGit">
-            <a href="https://github.com/AndresQ-Dev/BazarVintage.git"><i class="fa-brands fa-github"></i></a>
+                    <label for="miArchivo">Selecciona una imagen .jpg o .png:</label>
+
+                    <input type="file" id="miArchivo" name="miArchivo" multiple><br><br>
+
+                    <button type="submit" onclick="validar()">
+                        <span>Enviar</span>
+                    </button>
+
+                </form>
+            </main>
         </div>
 
-        &copy; Bazar Vintage 2024
-    </footer>
+        <footer>
+            <div class="info">
+                <p>
+                    <span>Horario:</span> Lunes a Viernes 9:30hs - 15:00hs<br>
+                    <span>Dirección:</span> Evergreen Terrace 742, Springfield.<br>
+                    <span>Teléfono:</span> 764-84377<br>
+                    <span>e-mail:</span> bazarvintage@admin.com
+                </p>
+            </div>
 
-    <script src="../funcionalidad_form.js"></script>
+            <div class="logoGit">
+                <a href="https://github.com/AndresQ-Dev/BazarVintage.git"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="copyright">
+                &copy; Bazar Vintage 2024
+            </div>
+
+        </footer>
+
+        <script src="../funcionalidad_form.js"></script>
+    </div>
 </body>
 
 </html>
