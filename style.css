@@ -22,9 +22,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;
-    /*Para no usar todo el ancho en pantalla UltraWide*/
+    max-width: 1600px;/*Para no usar todo el ancho en pantallas UltraWide*/
     margin: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 header .logo {
@@ -201,6 +201,10 @@ main h1 {
     .MainContainer footer {
         flex-direction: column;
     }
+
+    footer .info p{
+        text-align: center;
+    }
 }
 
 /* Estilos para el formulario en "Contacto"*/
@@ -317,7 +321,7 @@ footer .info p {
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    text-align: center;
+    /* text-align: center; */
 
 }
 

@@ -93,4 +93,6 @@ function validar()
     formulario.reset();
     //Prevengo la apertura de otra página
     event.preventDefault();
+    //Volver al top
+    window.scrollTo({top:0,behavior:'smooth'});
 }
