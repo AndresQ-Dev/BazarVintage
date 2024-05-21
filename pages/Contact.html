@@ -11,12 +11,11 @@
 
 <body>
     <header>
-        <a href="../index.html">
-            <div class="logo">
-                <img src="../images/favicom.png" alt="logo">
-                <p>Bazar Vintage</p>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/favicom.png" alt="logo"></a>
+            <p>Bazar Vintage</p>
             </div>
-        </a>
+        
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
@@ -43,7 +42,7 @@
                 <h2>Contáctanos</h2>
             </div>
 
-            <form action="" method="POST" target="_blank">
+            <form action="" method="POST" target="_blank" id="formulario_contacto">
                 <label for="motivo">Motivo de consulta:</label><br>
                 <select name="motivo" id="motivo" required>
                     <option value="" disabled selected>Selecciona un motivo</option>
@@ -89,7 +88,7 @@
 
                 <input type="file" id="miArchivo" name="miArchivo" multiple><br><br>
 
-                <button type="submit">
+                <button type="submit" onclick="validar()">
                     <span>Enviar</span>
                 </button>
 
