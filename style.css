@@ -22,7 +22,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px; /*Para no usar todo el ancho en pantalla UltraWide*/
+    max-width: 1600px;
+    /*Para no usar todo el ancho en pantalla UltraWide*/
     margin: auto;
 }
 
@@ -32,21 +33,21 @@ header .logo {
     padding: 10px 30px;
 }
 
-header .logo img{
+header .logo img {
     width: 90px;
     margin-right: 10px;
 }
 
-header .logo p{
+header .logo p {
     font-size: 2em;
     font-weight: 700;
     font-style: oblique;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(35deg, #333,#9d7d68,#333);
+    background: linear-gradient(35deg, #333, #9d7d68, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-} 
+}
 
 header nav {
     display: flex;
@@ -67,7 +68,7 @@ header nav ul li {
     margin: 0px 10px;
 }
 
-header nav ul li a{
+header nav ul li a {
     color: #555;
     font-size: 1.3em;
     transition: color 0.4s, background-color 0.4s;
@@ -77,7 +78,7 @@ header nav ul li a:hover {
     color: #9d7d68;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc; 
+    border-bottom: 2px solid #ccc;
 }
 
 /* Estilos para el "mobile_nav" */
@@ -155,9 +156,14 @@ main h1 {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     transition: transform 0.3s ease;
+    padding-bottom: 8px;
 }
 
-.card .price{
+.cards .card h3 {
+    color: #333;
+}
+
+.card .price {
     font-size: 1.4em;
     font-weight: bold;
     color: #333;
@@ -180,7 +186,7 @@ main h1 {
         display: none;
     }
 
-    header .logo{
+    header .logo {
         margin: auto;
     }
 
@@ -188,7 +194,7 @@ main h1 {
         display: block;
     }
 
-    .menu-toggle:checked ~ .menu-icon ~ .mobile-nav {
+    .menu-toggle:checked~.menu-icon~.mobile-nav {
         display: flex;
     }
 
@@ -203,15 +209,16 @@ main h1 {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
-    background: linear-gradient(3deg,#e9e9ed, #9d7d68);
+    background: linear-gradient(3deg, #e9e9ed, #9d7d68);
     border-radius: 15px;
     border: 2.5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.titulo_contacto{
+.titulo_contacto {
     text-align: center;
 }
+
 .titulo_contacto h2 {
     display: inline-block;
     font-size: 28px;
@@ -219,8 +226,6 @@ main h1 {
     padding: 10px 25px;
     color: #444;
     text-align: center;
-    /* border: 2px solid #ccc; */
-    /* border-radius: 10px; */
     background: transparent;
 }
 
@@ -231,7 +236,9 @@ label {
     color: #333;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -253,7 +260,7 @@ input[type="radio"] {
 
 .radio {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 
 textarea {
@@ -306,7 +313,7 @@ footer {
     padding-top: 15px;
 }
 
-footer .info p{
+footer .info p {
     font-size: 14px;
     font-weight: bold;
     color: #333;
@@ -314,7 +321,7 @@ footer .info p{
 
 }
 
-.logoGit{
+.logoGit {
     display: flex;
     overflow: hidden;
     transition: translateY 0.5s ease;
@@ -326,19 +333,19 @@ footer .info p{
     color: #9d7d68;
 }
 
-.logoGit a:hover{
+.logoGit a:hover {
     color: #333;
     transform: translateY(-10px);
 }
 
-.copyright{
+.copyright {
     font-size: 14px;
     font-weight: bold;
     color: #333;
 }
 
 /* ESTILOS DE PÁGINA PRODUCTOS */
-.titulo_Productos h2{
+.titulo_Productos h2 {
     display: flex;
     align-items: center;
     align-content: center;
@@ -360,14 +367,14 @@ footer .info p{
     box-shadow: 0 2px 5px rgba(37, 37, 37, 0.4);
 }
 
-.filters{
+.filters {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
-.filters input[type="button"]{
-    background-image: linear-gradient(180deg, #9d7d68, #dbc09b); 
+.filters input[type="button"] {
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
     color: #fcfcfc;
     border: none;
     padding: 10px 20px;
@@ -377,12 +384,12 @@ footer .info p{
     font-size: 1.3em;
 }
 
-.filters input[type="button"]:hover{
+.filters input[type="button"]:hover {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
     transform: scale(0.95);
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
