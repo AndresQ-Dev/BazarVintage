@@ -201,6 +201,10 @@ main h1 {
     .MainContainer footer {
         flex-direction: column;
     }
+
+    footer .info p{
+        text-align: center;
+    }
 }
 
 /* Estilos para el formulario en "Contacto"*/
@@ -317,7 +321,7 @@ footer .info p {
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    text-align: center;
+    /* text-align: center; */
 
 }
 
