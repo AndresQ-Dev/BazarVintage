@@ -17,14 +17,47 @@
     background-color: #fcfcfc;
 }
 
+/* prueba HERO */
+#hero_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(157, 125, 104, 0.5),
+            rgba(0, 0, 0, 0.4)), url("./images/banner3.jpg");
+    background-repeat: no-repeat;
+    gap: 20px;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+
+#hero_product button {
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#hero_product button:hover {
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
 /* Estilos para HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;/*Para no usar todo el ancho en pantallas UltraWide*/
+    max-width: 1600px;
+    /*Para no usar todo el ancho en pantallas UltraWide*/
     margin: auto;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
 }
 
 header .logo {
@@ -82,7 +115,6 @@ header nav ul li a:hover {
 }
 
 /* Estilos para el "mobile_nav" */
-
 .menu-toggle {
     display: none;
 }
@@ -202,12 +234,33 @@ main h1 {
         flex-direction: column;
     }
 
-    footer .info p{
+    footer .info p {
         text-align: center;
     }
 }
 
 /* Estilos para el formulario en "Contacto"*/
+
+#hero_contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.4),
+            rgba(157, 125, 104, 0.4)), url("./images/backContact.jpg");
+    background-repeat: no-repeat;
+    gap: 20px;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
 
 .main__contact {
     max-width: 700px;
@@ -219,25 +272,12 @@ main h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.titulo_contacto {
-    text-align: center;
-}
-
-.titulo_contacto h2 {
-    display: inline-block;
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding: 10px 25px;
-    color: #444;
-    text-align: center;
-    background: transparent;
-}
-
 label {
     font-size: 16px;
     margin-bottom: 5px;
     display: block;
     color: #333;
+    font-weight: bold;
 }
 
 input,
@@ -290,20 +330,26 @@ input[type="range"] {
 }
 
 button {
-    display: inline-block;
+    display: flex;
     background-color: #333;
-    color: #fff;
+    color: #333;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
 button:hover {
     background-color: #555;
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
 }
 
 /* Estilos para FOOTER */
@@ -349,26 +395,36 @@ footer .info p {
 }
 
 /* ESTILOS DE PÁGINA PRODUCTOS */
-.titulo_Productos h2 {
+/* prueba HERO */
+#hero_product {
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
-    color: #9d7d68;
-    padding: 20px;
-    position: relative;
+    text-align: center;
+    font-size: large;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+    rgba(157, 125, 104, 0.3),
+    rgba(0, 0, 0, 0.4)), url("./images/backProducts.jpg");
+    background-repeat: no-repeat;
+    gap: 20px;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
 }
 
-.sub::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 15px;
-    transform: translateX(-50%);
-    width: 25%;
-    height: 3px;
-    background-color: #9d7d68;
-    box-shadow: 0 2px 5px rgba(37, 37, 37, 0.4);
+#hero_product button {
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#hero_product button:hover {
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .filters {
