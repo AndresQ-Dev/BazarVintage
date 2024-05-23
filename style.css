@@ -246,10 +246,10 @@ main h1 {
     }
 
     /*Para ABOUT*/
-    .about{
+    .about {
         display: inline;
     }
-    
+
     .formas_pago .lista_pagos {
         display: flex;
         flex-direction: column;
