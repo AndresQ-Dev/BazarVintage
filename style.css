@@ -17,14 +17,54 @@
     background-color: #fcfcfc;
 }
 
+/* prueba HERO */
+#hero_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(157, 125, 104, 0.5),
+            rgba(0, 0, 0, 0.4)), url("./images/banner_home.jpg");
+    background-repeat: no-repeat;
+    gap: 20px;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#hero_home h2 {
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
+}
+
+/* #hero_product button {
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#hero_product button:hover {
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+} */
+
 /* Estilos para HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;/*Para no usar todo el ancho en pantallas UltraWide*/
+    max-width: 1600px;
+    /*Para no usar todo el ancho en pantallas UltraWide*/
     margin: auto;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
 }
 
 header .logo {
@@ -82,7 +122,6 @@ header nav ul li a:hover {
 }
 
 /* Estilos para el "mobile_nav" */
-
 .menu-toggle {
     display: none;
 }
@@ -202,35 +241,67 @@ main h1 {
         flex-direction: column;
     }
 
-    footer .info p{
+    footer .info p {
         text-align: center;
     }
+
+    /*Para ABOUT*/
+    .about p {
+        display: inline-block;        
+    }
+    
+    .formas_pago .lista_pagos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formas_pago .lista_pagos .pago {
+        width: 35%;
+    }
+
 }
 
 /* Estilos para el formulario en "Contacto"*/
+
+#hero_contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.4),
+            rgba(157, 125, 104, 0.4)), url("./images/banner_contact.jpg");
+    background-repeat: no-repeat;
+    gap: 20px;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+#hero_contact h2 {
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
+}
 
 .main__contact {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
     background: linear-gradient(3deg, #e9e9ed, #9d7d68);
-    border-radius: 15px;
+    border-radius: 15px 0;
     border: 2.5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.titulo_contacto {
-    text-align: center;
-}
-
-.titulo_contacto h2 {
-    display: inline-block;
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding: 10px 25px;
-    color: #444;
-    text-align: center;
-    background: transparent;
 }
 
 label {
@@ -238,6 +309,7 @@ label {
     margin-bottom: 5px;
     display: block;
     color: #333;
+    font-weight: bold;
 }
 
 input,
@@ -290,20 +362,26 @@ input[type="range"] {
 }
 
 button {
-    display: inline-block;
+    display: flex;
     background-color: #333;
-    color: #fff;
+    color: #333;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
 button:hover {
     background-color: #555;
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
 }
 
 /* Estilos para FOOTER */
@@ -349,27 +427,44 @@ footer .info p {
 }
 
 /* ESTILOS DE PÁGINA PRODUCTOS */
-.titulo_Productos h2 {
+/* prueba HERO */
+#hero_product {
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
-    color: #9d7d68;
-    padding: 20px;
-    position: relative;
+    text-align: center;
+    font-size: large;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(157, 125, 104, 0.3),
+            rgba(0, 0, 0, 0.4)), url("./images/banner_products.jpg");
+    background-repeat: no-repeat;
+    gap: 20px;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
 }
 
-.sub::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 15px;
-    transform: translateX(-50%);
-    width: 25%;
-    height: 3px;
-    background-color: #9d7d68;
-    box-shadow: 0 2px 5px rgba(37, 37, 37, 0.4);
+#hero_product h2 {
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
 }
+
+/* #hero_product button {
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#hero_product button:hover {
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+} */
 
 .filters {
     display: flex;
@@ -400,3 +495,100 @@ footer .info p {
 /* .card:not([cat="todo"]){
     display: none;
 } */
+
+/*Estilos para ABOUT*/
+/* Banner principal */
+#hero_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(180, 180, 180, 0.3),
+            rgba(157, 125, 104, 0.4)), url("./images/banner_about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+#hero_about h2 {
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
+}
+
+.about {
+    padding: 60px;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2.0;
+    margin-bottom: 15px;
+    text-indent: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.titulo_map h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto auto;
+}
+
+/*Formas de Pago*/
+.formas_pago {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.formas_pago h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.pago {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    transition: box-shadow 0.3s, background-image 0.8s;
+}
+
+.pago i {
+    font-size: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.pago:hover {
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
