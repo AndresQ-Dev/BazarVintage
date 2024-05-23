@@ -29,7 +29,7 @@
     color: #fcfcfc;
     background-image: linear-gradient(0deg,
             rgba(157, 125, 104, 0.5),
-            rgba(0, 0, 0, 0.4)), url("./images/banner3.jpg");
+            rgba(0, 0, 0, 0.4)), url("./images/banner_home.jpg");
     background-repeat: no-repeat;
     gap: 20px;
     background-size: cover;
@@ -39,7 +39,7 @@
     text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
 }
 
-#hero_home h2{
+#hero_home h2 {
     background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
     padding: 20px;
     border-radius: 1px 35px 1px 30px;
@@ -244,6 +244,23 @@ main h1 {
     footer .info p {
         text-align: center;
     }
+
+    /*Para ABOUT*/
+    .about p {
+        display: inline-block;        
+    }
+    
+    .formas_pago .lista_pagos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formas_pago .lista_pagos .pago {
+        width: 35%;
+    }
+
 }
 
 /* Estilos para el formulario en "Contacto"*/
@@ -260,7 +277,7 @@ main h1 {
     color: #fcfcfc;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.4),
-            rgba(157, 125, 104, 0.4)), url("./images/backContact.jpg");
+            rgba(157, 125, 104, 0.4)), url("./images/banner_contact.jpg");
     background-repeat: no-repeat;
     gap: 20px;
     background-size: cover;
@@ -271,7 +288,7 @@ main h1 {
     padding: 10px;
 }
 
-#hero_contact h2{
+#hero_contact h2 {
     background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
     padding: 20px;
     border-radius: 1px 35px 1px 30px;
@@ -421,8 +438,8 @@ footer .info p {
     height: 20vh;
     color: #fcfcfc;
     background-image: linear-gradient(0deg,
-    rgba(157, 125, 104, 0.3),
-    rgba(0, 0, 0, 0.4)), url("./images/backProducts.jpg");
+            rgba(157, 125, 104, 0.3),
+            rgba(0, 0, 0, 0.4)), url("./images/banner_products.jpg");
     background-repeat: no-repeat;
     gap: 20px;
     background-size: cover;
@@ -432,7 +449,7 @@ footer .info p {
     text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
 }
 
-#hero_product h2{
+#hero_product h2 {
     background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
     padding: 20px;
     border-radius: 1px 35px 1px 30px;
@@ -478,3 +495,100 @@ footer .info p {
 /* .card:not([cat="todo"]){
     display: none;
 } */
+
+/*Estilos para ABOUT*/
+/* Banner principal */
+#hero_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(180, 180, 180, 0.3),
+            rgba(157, 125, 104, 0.4)), url("./images/banner_about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+#hero_about h2 {
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
+}
+
+.about {
+    padding: 60px;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2.0;
+    margin-bottom: 15px;
+    text-indent: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.titulo_map h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto auto;
+}
+
+/*Formas de Pago*/
+.formas_pago {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.formas_pago h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.pago {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
+    transition: box-shadow 0.3s, background-image 0.8s;
+}
+
+.pago i {
+    font-size: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.pago:hover {
+    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
