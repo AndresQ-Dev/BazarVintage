@@ -246,8 +246,8 @@ main h1 {
     }
 
     /*Para ABOUT*/
-    .about p {
-        display: inline-block;        
+    .about{
+        display: inline;
     }
     
     .formas_pago .lista_pagos {
