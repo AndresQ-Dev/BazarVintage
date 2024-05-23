@@ -36,9 +36,16 @@
     margin-bottom: 20px;
     font-style: italic;
     box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
 }
 
-#hero_product button {
+#hero_home h2{
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
+}
+
+/* #hero_product button {
     background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
     font-weight: bold;
     border-radius: 10px;
@@ -47,7 +54,7 @@
 #hero_product button:hover {
     background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* Estilos para HEADER */
 header {
@@ -259,7 +266,15 @@ main h1 {
     background-size: cover;
     margin-bottom: 20px;
     font-style: italic;
-    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+#hero_contact h2{
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
 }
 
 .main__contact {
@@ -267,7 +282,7 @@ main h1 {
     margin: 40px auto;
     padding: 20px;
     background: linear-gradient(3deg, #e9e9ed, #9d7d68);
-    border-radius: 15px;
+    border-radius: 15px 0;
     border: 2.5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -414,9 +429,16 @@ footer .info p {
     margin-bottom: 20px;
     font-style: italic;
     box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
 }
 
-#hero_product button {
+#hero_product h2{
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
+}
+
+/* #hero_product button {
     background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
     font-weight: bold;
     border-radius: 10px;
@@ -425,7 +447,7 @@ footer .info p {
 #hero_product button:hover {
     background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-}
+} */
 
 .filters {
     display: flex;
