@@ -214,7 +214,7 @@ main h1 {
 
 /* Estilos para el formulario en "Contacto"*/
 
-#hero_contact {
+#banner_contact {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +237,7 @@ main h1 {
     padding: 10px;
 }
 
-#hero_contact h2 {
+#banner_contact h2 {
     background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
     padding: 20px;
     border-radius: 1px 35px 1px 30px;
@@ -353,7 +353,7 @@ footer .info p {
 .logoGit {
     display: flex;
     overflow: hidden;
-    transition: translateY 0.5s ease;
+    transition: translateY 0.5s ease flipHorozontal 0.5 ease;
     padding: 10px 10px;
 }
 
@@ -362,9 +362,20 @@ footer .info p {
     color: #9d7d68;
 }
 
-.logoGit a:hover {
+/* Animación para logo GitHub */
+@keyframes flipHorizontal {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.logoGit a i:hover {
+    display: inline-block;
+    animation: flipHorizontal 2s infinite linear;
     color: #333;
-    transform: translateY(-10px);
 }
 
 .copyright {
@@ -375,7 +386,7 @@ footer .info p {
 
 /* ESTILOS DE PÁGINA PRODUCTOS */
 /* prueba HERO */
-#hero_product {
+#banner_product {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,7 +407,7 @@ footer .info p {
     text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
 }
 
-#hero_product h2 {
+#banner_product h2 {
     background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
     padding: 20px;
     border-radius: 1px 35px 1px 30px;
@@ -431,7 +442,7 @@ footer .info p {
 
 /*Estilos para ABOUT*/
 /* Banner principal */
-#hero_about {
+#banner_about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -453,7 +464,7 @@ footer .info p {
     padding: 10px;
 }
 
-#hero_about h2 {
+#banner_about h2 {
     background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
     padding: 20px;
     border-radius: 1px 35px 1px 30px;
@@ -542,7 +553,7 @@ footer .info p {
 }
 
 /* Smartphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     header nav {
         display: none;
     }
