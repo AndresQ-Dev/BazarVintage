@@ -7,13 +7,13 @@ Bienvenido al repositorio del proyecto **Bazar Vintage**. En este sitio web que 
 ### Desktop
 
 <div align="center">
-  <img src="./images/readme_home" alt="Captura version Desktop" style="max-width:100%;">
+  <img src="./images/readme_home.jpg" alt="Captura version Desktop" style="max-width:100%;">
 </div>
 
 ### Mobile
 
 <div align="center">
-<img src="./images/readme_mobile" alt="Captura version Mobile" style="max-width:100%;">
+<img src="./images/readme_mobile.jpg" alt="Captura version Mobile" style="max-width:100%;">
 </div>
 
 ## Características principales:
