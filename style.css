@@ -372,10 +372,24 @@ footer .info p {
     }
 }
 
+@keyframes colorChange {
+    0% {
+        color: #333;
+    }
+    33% {
+        color: #9d7d68;
+    }
+    66% {
+        color: #dbc09b;
+    }
+    100% {
+        color: #333;
+    }
+}
+
 .logoGit a i:hover {
     display: inline-block;
-    animation: flipHorizontal 2s infinite linear;
-    color: #333;
+    animation: flipHorizontal 3s infinite linear, colorChange 4s infinite linear;
 }
 
 .copyright {
@@ -385,7 +399,6 @@ footer .info p {
 }
 
 /* ESTILOS DE PÁGINA PRODUCTOS */
-/* prueba HERO */
 #banner_product {
     display: flex;
     align-items: center;
