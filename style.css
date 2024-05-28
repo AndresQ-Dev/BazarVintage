@@ -17,46 +17,8 @@
     background-color: #fcfcfc;
 }
 
-/* prueba HERO */
-#hero_home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: large;
-    flex-direction: column;
-    height: 20vh;
-    color: #fcfcfc;
-    background-image: linear-gradient(0deg,
-            rgba(157, 125, 104, 0.5),
-            rgba(0, 0, 0, 0.4)), url("./images/banner_home.jpg");
-    background-repeat: no-repeat;
-    gap: 20px;
-    background-size: cover;
-    margin-bottom: 20px;
-    font-style: italic;
-    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
-    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
-}
-
-#hero_home h2 {
-    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
-    padding: 20px;
-    border-radius: 1px 35px 1px 30px;
-}
-
-/* #hero_product button {
-    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-#hero_product button:hover {
-    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-} */
-
-/* Estilos para HEADER */
+/* HOME */
+/* Estilos para header */
 header {
     display: flex;
     justify-content: space-between;
@@ -64,7 +26,6 @@ header {
     max-width: 1600px;
     /*Para no usar todo el ancho en pantallas UltraWide*/
     margin: auto;
-    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
 }
 
 header .logo {
@@ -89,6 +50,7 @@ header .logo p {
     background-clip: text;
 }
 
+/* Nav horizontal */
 header nav {
     display: flex;
     flex-direction: row;
@@ -121,33 +83,34 @@ header nav ul li a:hover {
     border-bottom: 2px solid #ccc;
 }
 
-/* Estilos para el "mobile_nav" */
+/* Nav Mobile */
 .menu-toggle {
     display: none;
 }
 
 .menu-icon {
     display: none;
-    font-size: 2.5em;
+    position: relative;
+    font-size: 2em;
     background: none;
     border: none;
     cursor: pointer;
     color: #333;
     padding: 10px;
-    margin-right: 1.1em;
+    margin-right: 1em;
 }
 
 .mobile-nav {
     display: none;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 35%;
     background-color: rgba(230, 230, 230, 0.8);
-    position: absolute;
-    top: 110px;
-    left: 0;
+    position: fixed;
+    top: 114px;
+    left: auto;
     right: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
@@ -164,7 +127,36 @@ main h1 {
     text-align: center;
 }
 
-/*Estilos para banner*/
+/* Estilos de HOME */
+/* Banner Home*/
+#banner_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    flex-direction: column;
+    height: 20vh;
+    color: #fcfcfc;
+    background-image: linear-gradient(0deg,
+            rgba(157, 125, 104, 0.5),
+            rgba(0, 0, 0, 0.4)), url("./images/banner_home.jpg");
+    background-repeat: no-repeat;
+    gap: 20px;
+    background-size: cover;
+    margin-bottom: 20px;
+    font-style: italic;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+    text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#banner_home h2 {
+    background: linear-gradient(160deg, rgba(210, 210, 210, 0.2), rgba(210, 210, 210, 0.2));
+    padding: 20px;
+    border-radius: 1px 35px 1px 30px;
+}
+
+/*Estilos para banner en SALE*/
 .cover_image {
     width: 100%;
     margin: auto;
@@ -175,6 +167,7 @@ main h1 {
     width: 100%;
     object-fit: cover;
     box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+    /* max-height: 30vh; */
 }
 
 
@@ -246,10 +239,10 @@ main h1 {
     }
 
     /*Para ABOUT*/
-    .about{
+    .about {
         display: inline;
     }
-    
+
     .formas_pago .lista_pagos {
         display: flex;
         flex-direction: column;
@@ -399,8 +392,6 @@ footer .info p {
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    /* text-align: center; */
-
 }
 
 .logoGit {
@@ -455,20 +446,9 @@ footer .info p {
     border-radius: 1px 35px 1px 30px;
 }
 
-/* #hero_product button {
-    background-image: linear-gradient(180deg, #9d7d68, #dbc09b);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-#hero_product button:hover {
-    background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-} */
-
 .filters {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -481,6 +461,7 @@ footer .info p {
     border-radius: 10px;
     transition: background-color 0.5s ease, transform 0.5s ease;
     font-size: 1.3em;
+    max-width: 250px;
 }
 
 .filters input[type="button"]:hover {
@@ -491,10 +472,6 @@ footer .info p {
 .hidden {
     display: none;
 }
-
-/* .card:not([cat="todo"]){
-    display: none;
-} */
 
 /*Estilos para ABOUT*/
 /* Banner principal */
