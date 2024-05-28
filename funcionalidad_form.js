@@ -1,3 +1,5 @@
+/*Validación del Form*/
+
 function validar()
 {
     //Debe seleccionarse un motivo
@@ -93,6 +95,6 @@ function validar()
     formulario.reset();
     //Prevengo la apertura de otra página
     event.preventDefault();
-    //Volver al top
+    //Volver al top de la página
     window.scrollTo({top:0,behavior:'smooth'});
 }
