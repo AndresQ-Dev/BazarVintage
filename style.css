@@ -107,7 +107,7 @@ header nav ul li a:hover {
     width: 35%;
     background-color: rgba(230, 230, 230, 0.8);
     position: fixed;
-    top: 114px;
+    top: 84px;
     left: auto;
     right: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -212,50 +212,6 @@ main h1 {
     object-fit: cover;
 }
 
-/* Media-Query para mobile */
-@media screen and (max-width: 768px) {
-    header nav {
-        display: none;
-    }
-
-    header .logo {
-        margin: auto;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .menu-toggle:checked~.menu-icon~.mobile-nav {
-        display: flex;
-    }
-
-    .MainContainer footer {
-        flex-direction: column;
-    }
-
-    footer .info p {
-        text-align: center;
-    }
-
-    /*Para ABOUT*/
-    .about {
-        display: inline;
-    }
-
-    .formas_pago .lista_pagos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .formas_pago .lista_pagos .pago {
-        width: 45%;
-    }
-
-}
-
 /* Estilos para el formulario en "Contacto"*/
 
 #hero_contact {
@@ -292,7 +248,7 @@ main h1 {
     margin: 40px auto;
     padding: 20px;
     background: linear-gradient(3deg, #e9e9ed, #9d7d68);
-    border-radius: 15px 0;
+    border-radius: 15px 15px;
     border: 2.5px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -568,4 +524,85 @@ footer .info p {
 .pago:hover {
     background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header .logo p {
+        font-size: 1.8em;
+    }
+
+    header .logo img {
+        width: 85px;
+    }
+
+    nav ul li {
+        font-size: 0.9em;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header .logo {
+        /* margin: auto; */
+    }
+
+    header .logo img{
+        width: 60px;
+    }
+
+    header .logo p{
+        font-size: 1.6em;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-toggle:checked~.menu-icon~.mobile-nav {
+        display: flex;
+    }
+
+    /*FOOTER*/
+    .MainContainer footer {
+        flex-direction: column;
+    }
+
+    footer .info p {
+        text-align: center;
+    }
+
+    /*Para titulo_Productos*/
+    .filters{
+        margin: 0 5%;        
+    }
+
+    .filters input[type="button"] {
+        font-size: 1.1em;
+    }    
+
+    /*Para ABOUT*/
+    .about {
+        display: inline;
+    }
+
+    .formas_pago .lista_pagos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formas_pago .lista_pagos .pago {
+        width: 45%;
+    }
+
+    .main__contact{
+        max-width: 95%;
+    }
+
 }
