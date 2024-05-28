@@ -24,6 +24,17 @@ Bienvenido al repositorio del proyecto **Bazar Vintage**. En este sitio web que 
 
 - **Contacto:** Contamos con un formulario para consultas sencillo de usar.
 
+## Recursos y Herramientas
+
+- La maquetación se realizó con sobre HTML 5 con CSS **FlexBox**.
+- El sitio cuenta con 5 páginas totalmente responsive (Desktop, Tablet, Mobile)
+  - Home, Products, Sale, Contact y About
+- El formulario de contacto incluye la posibilidad de cargar una imágen en formato jpg o png y se valida por JavaScript.
+- Se utilizan transiciones y animaciones de distitnto tipo en botones, cards, nav y footer.
+- Se utilizan fuentes de Google Fonts e íconos de Font Awesome.
+- El logo fue realizado por la AI *DALL-E 3*.
+- Se agregó un Favicon a todas las páginas del proyecto.
+
 ## Contribuciones:
 
 Si deseas proponer cambios nos encantaría recibir tus contribuciones para mejorar y hacer crecer este proyecto. Si tienes alguna idea, sugerencia o corrección, no dudes en enviar un pull request.
