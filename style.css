@@ -18,7 +18,7 @@
 }
 
 /* HOME */
-/* Estilos para header para TODAS las páginas en Desktop*/
+/* --------------Estilos para header para TODAS las páginas en Desktop-----------------*/
 header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ header .logo p {
     background-clip: text;
 }
 
-/* Nav Horizontal */
+/* -----------------Nav Horizontal------------------------ */
 header nav {
     display: flex;
     flex-direction: row;
@@ -83,7 +83,7 @@ header nav ul li a:hover {
     border-bottom: 2px solid #ccc;
 }
 
-/* Nav Mobile */
+/* ----------------------Nav Mobile---------------------------- */
 .menu-toggle {
     display: none;
 }
@@ -127,8 +127,7 @@ main h1 {
     text-align: center;
 }
 
-/* Estilos de HOME */
-/* Banner Home*/
+/* --------------------Banner Home------------------- */
 #banner_home {
     display: flex;
     align-items: center;
@@ -156,7 +155,7 @@ main h1 {
     border-radius: 1px 35px 1px 30px;
 }
 
-/* CARDS */
+/* -------------------------CARDS--------------------------- */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +196,7 @@ main h1 {
     object-fit: cover;
 }
 
-/*Estilos para banner en SALE*/
+/* -----------------Estilos para banner en SALE------------------- */
 .cover_image {
     width: 100%;
     margin: auto;
@@ -211,7 +210,7 @@ main h1 {
     /* max-height: 30vh; */
 }
 
-/* Estilos para el formulario en "Contacto"*/
+/* ------------------Estilos para el formulario en "Contacto"----------- */
 
 #banner_contact {
     display: flex;
@@ -332,7 +331,7 @@ button:hover {
     background-image: linear-gradient(180deg, #dbc09b, #9d7d68);
 }
 
-/* Estilos para FOOTER */
+/* --------------------Estilos para FOOTER------------------- */
 footer {
     display: flex;
     flex-direction: row;
@@ -361,7 +360,7 @@ footer .info p {
     color: #9d7d68;
 }
 
-/* Animación para logo GitHub */
+/* --------------------Animación para logo GitHub-------------------- */
 @keyframes flipHorizontal {
     0% {
         transform: rotateY(0deg);
@@ -397,7 +396,7 @@ footer .info p {
     color: #333;
 }
 
-/* ESTILOS DE PÁGINA PRODUCTOS */
+/* ---------------------ESTILOS DE PÁGINA PRODUCTOS--------------------- */
 #banner_product {
     display: flex;
     align-items: center;
@@ -452,7 +451,7 @@ footer .info p {
     display: none;
 }
 
-/*Estilos para ABOUT*/
+/*-------------------------Estilos para ABOUT---------------------- */
 /* Banner principal */
 #banner_about {
     display: flex;
@@ -501,7 +500,7 @@ footer .info p {
     margin: 0 auto;
 }
 
-/* Mapa */
+/* ------------------------Mapa------------------- */
 .titulo_map h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -516,7 +515,7 @@ footer .info p {
     margin: auto auto;
 }
 
-/*Formas de Pago*/
+/* ----------------------Formas de Pago---------------------*/
 .formas_pago {
     text-align: center;
     margin-bottom: 30px;
@@ -551,7 +550,7 @@ footer .info p {
 }
 
 /* *****************MEDIA QUERY***************** */
-/* Tablet */
+/* -------------------Tablet-------------------- */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     header .logo p {
         font-size: 1.8em;
@@ -566,7 +565,7 @@ footer .info p {
     }
 }
 
-/* Smartphones */
+/* -----------------Smartphones-------------------- */
 @media screen and (max-width: 767px) {
     header nav {
         display: none;
@@ -592,7 +591,7 @@ footer .info p {
         display: flex;
     }
 
-    /*FOOTER*/
+    /* -----------------FOOTER----------------------*/
     .MainContainer footer {
         flex-direction: column;
     }
@@ -601,7 +600,7 @@ footer .info p {
         text-align: center;
     }
 
-    /*Para titulo_Productos*/
+    /* ---------------------Para titulo_Productos---------------------*/
     .filters{
         margin: 0 5%;        
     }
@@ -610,7 +609,7 @@ footer .info p {
         font-size: 1.1em;
     }    
 
-    /*Para ABOUT*/
+    /* ------------------Para ABOUT------------------------------ */
     .about {
         display: inline;
     }
