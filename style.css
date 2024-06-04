@@ -160,6 +160,7 @@ main h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 1.5rem;
     border-radius: 50%;
     background-color: #fcfcfc;
 }
